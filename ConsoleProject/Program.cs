@@ -3,9 +3,6 @@ using ClassLibrary;
 using ClassLibrary.Entity;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleProject
 {
@@ -26,7 +23,6 @@ namespace ConsoleProject
             } catch (Exception e) {
                 e.ToString();
             }
-            
         }
     }
 }
