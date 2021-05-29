@@ -65,7 +65,7 @@
       <Project>{0e8d2afb-0256-4e00-b261-ed1fca67b6c3}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ClassLibrary2\ClassLibrary.csproj">
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
       <Project>{364ba999-d8df-46d2-9929-8a9dd8031fa4}</Project>
       <Name>ClassLibrary</Name>
     </ProjectReference>

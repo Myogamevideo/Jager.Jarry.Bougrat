@@ -14,8 +14,6 @@ C:\Users\aljarry2\source\repos\Jager.bougrat.jarry\ConsoleProject\bin\Debug\Clas
 C:\Users\aljarry2\source\repos\Jager.bougrat.jarry\ConsoleProject\bin\Debug\ClassLibrary.pdb
 C:\Users\aljarry2\source\repos\Jager.bougrat.jarry\ConsoleProject\bin\Debug\ClassLibrary.dll.config
 C:\Users\aljarry2\source\repos\Jager.bougrat.jarry\ConsoleProject\obj\Debug\ConsoleProject.csprojAssemblyReference.cache
-U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\Database\Database.mdf
-U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\Database\Database_log.ldf
 U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\ConsoleProject.exe.config
 U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\ConsoleProject.exe
 U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\ConsoleProject.pdb
@@ -33,3 +31,5 @@ U:\Jager.Jarry.Bougrat\ConsoleProject\obj\Debug\ConsoleProject.pdb
 U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\ClassLibrary2.dll
 U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\ClassLibrary2.pdb
 U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\ClassLibrary2.dll.config
+U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\Database\Database.mdf
+U:\Jager.Jarry.Bougrat\ConsoleProject\bin\Debug\Database\Database_log.ldf
