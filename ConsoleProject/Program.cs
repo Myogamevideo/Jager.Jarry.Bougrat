@@ -13,6 +13,7 @@ namespace ConsoleProject
             try
             {
                 BusinessManager manager = BusinessManager.Instance;
+                manager.AjouterEmployee(new Employee());
                 List<Employee> employees = manager.GetAllEmployee();
                 System.Console.WriteLine("---- LISTE DES EMPLOYEE -----");
                 foreach (Employee c in employees)
