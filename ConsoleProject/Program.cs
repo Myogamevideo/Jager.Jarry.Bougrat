@@ -1,4 +1,5 @@
-﻿using ClassLibrary;
+﻿using BusinessLayer;
+using ClassLibrary;
 using ClassLibrary.Entity;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,14 @@ namespace ConsoleProject
         {
             try
             {
-                Context context = new Context();
-                context.Statuts.Add(new Statut { Label = "Test" });
-                context.SaveChanges();
+                BusinessManager manager = BusinessManager.Instance;
+                List<Employee> employees = manager.GetAllEmployee();
+                System.Console.WriteLine("---- LISTE DES EMPLOYEE -----");
+                foreach (Employee c in employees)
+                {
+                    System.Console.WriteLine("Employee ID {0} : {1}", c.Id, c.Nom);
+                }
+
             } catch (Exception e) {
                 e.ToString();
             }
