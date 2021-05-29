@@ -13,7 +13,7 @@ namespace ClassLibrary.Configuration
     {
         public FormationFluent()
         {
-            ToTable("APP_Formation");
+            ToTable("APP_FORMATION");
             HasKey(e => e.Id);
 
             Property(f => f.Id).HasColumnName("EMP_ID").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);

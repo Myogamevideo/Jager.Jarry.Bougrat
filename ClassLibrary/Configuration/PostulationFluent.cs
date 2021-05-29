@@ -13,7 +13,7 @@ namespace ClassLibrary.Configuration
     {
         public PostulationFluent()
         {
-            ToTable("APP_Postulation");
+            ToTable("APP_POSTULATION");
             HasKey(p => new { p.FkOffre , p.FkEmployee });            
             
             Property(p => p.Statut).HasColumnName("POS_STATUT").IsRequired();

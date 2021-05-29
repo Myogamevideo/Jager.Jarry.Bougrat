@@ -1,11 +1,6 @@
-﻿using ClassLibrary.Entity;
-using System;
-using System.Collections.Generic;
+﻿ using ClassLibrary.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ClassLibrary.Configuration
 {
@@ -13,7 +8,7 @@ namespace ClassLibrary.Configuration
     {
         public EmployeeFluent()
         {
-            ToTable("APP_Employee");
+            ToTable("APP_EMPLOYEE");
             HasKey(e => e.Id);
 
             Property(e => e.Id).HasColumnName("EMP_ID ").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
