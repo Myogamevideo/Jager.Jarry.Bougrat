@@ -22,6 +22,6 @@ namespace ClassLibrary.Entity
 
         public ICollection<Postulation> Postulations { get; set; }
 
-        public ICollection<Postulation> Statuts { get; set; }
+        public Statut Statut { get; set; }
     }
 }

@@ -22,8 +22,7 @@ namespace ClassLibrary.Configuration
             Property(o => o.Salaire).HasColumnName("OFF_SALAIRE").IsRequired();
             Property(o => o.Description).HasColumnName("OFF_DESCRIPTION").IsRequired().HasMaxLength(50);
             Property(o => o.Responsible).HasColumnName("OFF_RESPONSABLE").IsRequired().HasMaxLength(50);
-
-            HasMany(e => e.Statuts).WithRequired(ee => ee.Offre).HasForeignKey(ee => ee.FkOffre);
+            HasRequired(o => o.Statut);
             HasMany(e => e.Postulations).WithRequired(ee => ee.Offre).HasForeignKey(ee => ee.FkOffre);
         }
     }

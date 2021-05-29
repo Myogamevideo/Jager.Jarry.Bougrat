@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,6 +34,6 @@ namespace ClassLibrary
         public IDbSet<Formation> Formations { get; set; }
         public IDbSet<Offre> Offres { get; set; }
         public IDbSet<Postulation> Postulations { get; set; }
-        public IDbSet<Statut> Statuts { get; set; }
+        public IDbSet<Statut> Statut { get; set; }
     }
 }
