@@ -30,7 +30,7 @@ namespace BusinessLayer
 
 
         #region Offres
-        public List<Offre> GetAllOffres()
+        public List<Offre> GetAllOffre()
         {
             OffreQuery oq = new OffreQuery(context);
             return oq.GetAll().ToList();

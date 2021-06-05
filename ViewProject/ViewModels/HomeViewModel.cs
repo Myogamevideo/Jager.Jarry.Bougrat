@@ -11,7 +11,7 @@ namespace ViewProject.ViewModels
     {
         #region Variables
 
-        private ListeEmployeeViewModel _listeEmployeeViewModel = null;
+        private ListeOffreViewModel _listeOffreViewModel = null;
 
         #endregion
 
@@ -19,17 +19,17 @@ namespace ViewProject.ViewModels
 
         public HomeViewModel()
         {
-            _listeEmployeeViewModel = new ListeEmployeeViewModel();
+            _listeOffreViewModel = new ListeOffreViewModel();
         }
 
         #endregion
 
         #region Data Bindings
 
-        public ListeEmployeeViewModel ListeEmployeeViewModel
+        public ListeOffreViewModel ListeOffreViewModel
         {
-            get { return _listeEmployeeViewModel; }
-            set { _listeEmployeeViewModel = value; }
+            get { return _listeOffreViewModel; }
+            set { _listeOffreViewModel = value; }
         }
 
         #endregion

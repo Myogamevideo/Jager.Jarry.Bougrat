@@ -36,3 +36,16 @@ C:\Users\aljarry2\source\repos\asp-net\Jager.Jarry.Bougrat\ClassLibrary\obj\Debu
 C:\Users\aljarry2\source\repos\asp-net\Jager.Jarry.Bougrat\ClassLibrary\obj\Debug\ClassLibrary2.dll
 C:\Users\aljarry2\source\repos\asp-net\Jager.Jarry.Bougrat\ClassLibrary\obj\Debug\ClassLibrary2.pdb
 C:\Users\aljarry2\source\repos\asp-net\Jager.Jarry.Bougrat\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\Database\Database.mdf
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\Database\Database_log.ldf
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\ClassLibrary2.dll.config
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\ClassLibrary2.dll
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\ClassLibrary2.pdb
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\EntityFramework.dll
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\EntityFramework.xml
+D:\Jager.Jarry.Bougrat\ClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Jager.Jarry.Bougrat\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+D:\Jager.Jarry.Bougrat\ClassLibrary\obj\Debug\ClassLibrary.csproj.CopyComplete
+D:\Jager.Jarry.Bougrat\ClassLibrary\obj\Debug\ClassLibrary2.dll
+D:\Jager.Jarry.Bougrat\ClassLibrary\obj\Debug\ClassLibrary2.pdb

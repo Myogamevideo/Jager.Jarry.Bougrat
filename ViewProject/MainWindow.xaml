@@ -12,9 +12,9 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <DockPanel Background="Blue">
+        <DockPanel Background="Blue" Grid.Row="0">
             <Label VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="26" Foreground="White">Mon Application</Label>
         </DockPanel>
-        <my:ListeEmployee Grid.Row="1" DataContext="{Binding ListeEmployeeViewModel}"></my:ListeEmployee>
+        <my:ListeOffre Grid.Row="1" DataContext="{Binding ListeOffreViewModel}"></my:ListeOffre>
     </Grid>
 </Window>
