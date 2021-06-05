@@ -25,7 +25,7 @@ namespace ViewProject.ViewModels
         public ListeEmployeeViewModel()
         {
             _Employees = new ObservableCollection<DetailEmployeeViewModel>();
-            foreach (Employee e in BusinessManager.Instance.GetAllEmployee())
+            foreach (Employee e in BusinessManager.Instance.GetAllEmployees())
             {
                 _Employees.Add(new DetailEmployeeViewModel(e));
             }

@@ -56,32 +56,31 @@ namespace BusinessLayer
         }
         #endregion
 
-        // TODO: SUPPR
         #region Employee
 
-        public List<Employee> GetAllEmployee()
+        public List<Employee> GetAllEmployees()
         {
             EmployeeQuery eq = new EmployeeQuery(context);
             return eq.GetAll().ToList();
         }
 
        
-        public int AjouterEmployee(Employee e)
+        public int AddEmployee(Employee e)
         {
             EmployeeCommand ec = new EmployeeCommand(context);
-            return ec.Ajouter(e);
+            return ec.Add(e);
         }
 
-        public void ModifierEmployee(Employee e)
+        public void UpdateEmployee(Employee e)
         {
             EmployeeCommand ec = new EmployeeCommand(context);
-            ec.Modifier(e);
+            ec.Update(e);
         }
 
-         public void SupprimerEmployee(int employeeID)
+         public void DeleteEmployee(int employeeID)
         {
             EmployeeCommand ec = new EmployeeCommand(context);
-            ec.Supprimer(employeeID);
+            ec.Delete(employeeID);
         }
         #endregion
 

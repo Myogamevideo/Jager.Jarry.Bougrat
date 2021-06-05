@@ -13,7 +13,7 @@ namespace UnitTestProject
         public void GetEmployee_ReturnsAll()
         {
             BusinessManager m = BusinessManager.Instance;
-            var produits = m.GetAllEmployee();
+            var produits = m.GetAllEmployees();
             Assert.IsNotNull(produits != null);
             Assert.IsInstanceOfType(produits, typeof(List<Employee>));
         }
