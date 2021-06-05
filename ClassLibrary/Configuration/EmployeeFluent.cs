@@ -14,7 +14,7 @@ namespace ClassLibrary.Configuration
             Property(e => e.Id).HasColumnName("EMP_ID ").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(e => e.Nom).HasColumnName("EMP_NOM").IsRequired().HasMaxLength(50);
             Property(e => e.Prenom).HasColumnName("EMP_PRENOM").IsRequired().HasMaxLength(50);
-            Property(e => e.DateOfBirth).HasColumnName("EMP_DATENAISSANCE");
+            Property(e => e.DateOfBirth).HasColumnName("EMP_DATENAISSANCE").HasColumnType("datetime2");
             Property(e => e.Seniority).HasColumnName("EMP_SENIORITY");
             Property(e => e.Biography).HasColumnName("EMP_BIOGRAPHY");
             

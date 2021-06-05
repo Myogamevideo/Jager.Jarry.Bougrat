@@ -10,10 +10,20 @@ namespace ConsoleProject
     {
         static void Main(string[] args)
         {
-            try
-            {
+            /*Context context = new Context();
+
+            context.Statut.Add(new Statut { Label = "test" });
+            context.SaveChanges();*/
+
+            /*try
+            {*/
                 BusinessManager manager = BusinessManager.Instance;
-                manager.AjouterEmployee(new Employee());
+                manager.AjouterEmployee(new Employee()
+                {
+                    Nom = "BONJOUR",
+                    Prenom = "Bonjour",
+                    DateOfBirth = new DateTime()
+                });
                 List<Employee> employees = manager.GetAllEmployee();
                 System.Console.WriteLine("---- LISTE DES EMPLOYEE -----");
                 foreach (Employee c in employees)
@@ -21,9 +31,9 @@ namespace ConsoleProject
                     System.Console.WriteLine("Employee ID {0} : {1}", c.Id, c.Nom);
                 }
 
-            } catch (Exception e) {
+            /*} catch (Exception e) {
                 e.ToString();
-            }
+            }*/
         }
     }
 }
