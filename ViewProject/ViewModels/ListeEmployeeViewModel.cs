@@ -1,4 +1,5 @@
-﻿using ClassLibrary.Entity;
+﻿using BusinessLayer;
+using ClassLibrary.Entity;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,7 +25,7 @@ namespace ViewProject.ViewModels
         public ListeEmployeeViewModel()
         {
             _Employees = new ObservableCollection<DetailEmployeeViewModel>();
-            foreach (Employee e in BusinessManagerMock.Instance.GetAllEmployee())
+            foreach (Employee e in BusinessManager.Instance.GetAllEmployee())
             {
                 _Employees.Add(new DetailEmployeeViewModel(e));
             }
