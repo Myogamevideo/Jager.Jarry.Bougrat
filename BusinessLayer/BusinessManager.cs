@@ -27,8 +27,6 @@ namespace BusinessLayer
             }
         }
 
-
-
         #region Offres
         public List<Offre> GetAllOffre()
         {
@@ -36,6 +34,11 @@ namespace BusinessLayer
             return oq.GetAll().ToList();
         }
 
+        public List<Offre> GetAllOffresByStatut(Statut statut)
+        {
+            OffreQuery oq = new OffreQuery(context);
+            return oq.GetAllByStatut(statut).ToList();
+        }
 
         public int AddOffre(Offre o)
         {
@@ -56,34 +59,48 @@ namespace BusinessLayer
         }
         #endregion
 
-        // TODO: SUPPR
         #region Employee
 
-        public List<Employee> GetAllEmployee()
+        public List<Employee> GetAllEmployees()
         {
             EmployeeQuery eq = new EmployeeQuery(context);
             return eq.GetAll().ToList();
         }
 
        
-        public int AjouterEmployee(Employee e)
+        public int AddEmployee(Employee e)
         {
             EmployeeCommand ec = new EmployeeCommand(context);
-            return ec.Ajouter(e);
+            return ec.Add(e);
         }
 
-        public void ModifierEmployee(Employee e)
+        public void UpdateEmployee(Employee e)
         {
             EmployeeCommand ec = new EmployeeCommand(context);
-            ec.Modifier(e);
+            ec.Update(e);
         }
 
-         public void SupprimerEmployee(int employeeID)
+         public void DeleteEmployee(int employeeID)
         {
             EmployeeCommand ec = new EmployeeCommand(context);
-            ec.Supprimer(employeeID);
+            ec.Delete(employeeID);
         }
         #endregion
 
+        #region Statut
+
+        public List<Statut> GetAllStatut()
+        {
+            StatutQuery sq = new StatutQuery(context);
+            return sq.GetAll().ToList();
+        }
+
+        public Statut GetStatutByID(int id)
+        {
+            StatutQuery sq = new StatutQuery(context);
+            return sq.GetByID(id).FirstOrDefault();
+        }
+        
+        #endregion
     }
 }

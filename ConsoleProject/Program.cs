@@ -18,13 +18,13 @@ namespace ConsoleProject
             /*try
             {*/
                 BusinessManager manager = BusinessManager.Instance;
-                manager.AjouterEmployee(new Employee()
+                manager.AddEmployee(new Employee()
                 {
                     Nom = "BONJOUR",
                     Prenom = "Bonjour",
                     DateOfBirth = new DateTime()
                 });
-                List<Employee> employees = manager.GetAllEmployee();
+                List<Employee> employees = manager.GetAllEmployees();
                 System.Console.WriteLine("---- LISTE DES EMPLOYEE -----");
                 foreach (Employee c in employees)
                 {
