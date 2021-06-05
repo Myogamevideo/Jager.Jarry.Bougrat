@@ -23,5 +23,10 @@ namespace BusinessLayer.Queries
         {
             return _context.Offres.Where(o => o.Id == id);
         }
+
+        public IQueryable<Offre> GetAllByStatut(Statut statut)
+        {
+            return _context.Offres.Where(o => o.Statut.Id == statut.Id);
+        }
     }
 }

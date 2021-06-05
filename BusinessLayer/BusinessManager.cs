@@ -27,8 +27,6 @@ namespace BusinessLayer
             }
         }
 
-
-
         #region Offres
         public List<Offre> GetAllOffres()
         {
@@ -36,6 +34,11 @@ namespace BusinessLayer
             return oq.GetAll().ToList();
         }
 
+        public List<Offre> GetAllOffresByStatut(Statut statut)
+        {
+            OffreQuery oq = new OffreQuery(context);
+            return oq.GetAllByStatut(statut).ToList();
+        }
 
         public int AddOffre(Offre o)
         {
