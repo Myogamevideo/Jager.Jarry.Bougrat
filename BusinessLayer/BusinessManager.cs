@@ -84,5 +84,20 @@ namespace BusinessLayer
         }
         #endregion
 
+        #region Statut
+
+        public List<Statut> GetAllStatut()
+        {
+            StatutQuery sq = new StatutQuery(context);
+            return sq.GetAll().ToList();
+        }
+
+        public Statut GetStatutByID(int id)
+        {
+            StatutQuery sq = new StatutQuery(context);
+            return sq.GetByID(id).FirstOrDefault();
+        }
+        
+        #endregion
     }
 }
