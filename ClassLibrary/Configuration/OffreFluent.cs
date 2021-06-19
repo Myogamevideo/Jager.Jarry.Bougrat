@@ -18,7 +18,7 @@ namespace ClassLibrary.Configuration
 
             Property(o => o.Id).HasColumnName("OFF_ID").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(o => o.Intitule).HasColumnName("OFF_INTITULE").IsRequired().HasMaxLength(50);
-            Property(o => o.Date).HasColumnName("OFF_DATE").IsRequired();
+            Property(o => o.Date).HasColumnName("OFF_DATE").IsRequired().HasColumnType("datetime2"); ;
             Property(o => o.Salaire).HasColumnName("OFF_SALAIRE").IsRequired();
             Property(o => o.Description).HasColumnName("OFF_DESCRIPTION").IsRequired().HasMaxLength(50);
             Property(o => o.Responsible).HasColumnName("OFF_RESPONSABLE").IsRequired().HasMaxLength(50);

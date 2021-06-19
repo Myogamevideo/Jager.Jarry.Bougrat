@@ -100,7 +100,25 @@ namespace BusinessLayer
             StatutQuery sq = new StatutQuery(context);
             return sq.GetByID(id).FirstOrDefault();
         }
-        
+
+        public int AddStatut(Statut s)
+        {
+            StatutCommand sc = new StatutCommand(context);
+            return sc.Add(s);
+        }
+
+        public void UpdateStatut(Statut s)
+        {
+            StatutCommand sc = new StatutCommand(context);
+            sc.Update(s);
+        }
+
+        public void DeleteStatut(int statutID)
+        {
+            StatutCommand sc = new StatutCommand(context);
+            sc.Delete(statutID);
+        }
+
         #endregion
     }
 }

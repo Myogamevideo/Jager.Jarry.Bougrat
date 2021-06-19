@@ -28,7 +28,7 @@ namespace BusinessLayer.Commands
             Statut updatedStatut = _context.Statut.Where(s => s.Id == statut.Id).FirstOrDefault();
             if (updatedStatut != null)
             {
-                // TODO
+                updatedStatut.Label = statut.Label;
             }
 
             _context.SaveChanges();
@@ -39,7 +39,7 @@ namespace BusinessLayer.Commands
             Statut statutToDel = _context.Statut.Where(o => o.Id == statutID).FirstOrDefault();
             if (statutToDel != null)
             {
-                _context.Statut.Remove(offreToDel);
+                _context.Statut.Remove(statutToDel);
             }
 
             _context.SaveChanges();

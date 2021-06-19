@@ -17,7 +17,7 @@ namespace ClassLibrary.Configuration
             HasKey(p => new { p.FkOffre , p.FkEmployee });            
             
             Property(p => p.Statut).HasColumnName("POS_STATUT").IsRequired();
-            Property(p => p.Date).HasColumnName("POS_DATE");
+            Property(p => p.Date).HasColumnName("POS_DATE").HasColumnType("datetime2"); ;
 
             HasRequired(pp => pp.Employee).WithMany(p => p.Postulations).HasForeignKey(p => p.FkEmployee);
             HasRequired(pp => pp.Offre).WithMany(p => p.Postulations).HasForeignKey(p => p.FkOffre);

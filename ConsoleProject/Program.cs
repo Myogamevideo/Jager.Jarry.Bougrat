@@ -10,13 +10,28 @@ namespace ConsoleProject
     {
         static void Main(string[] args)
         {
+
+            BusinessManager manager = BusinessManager.Instance;
+            //manager.AddStatut(new Statut(){Label = "Ouverte"});
+
+            manager.AddOffre(new Offre()
+            {
+                Intitule = "Offre 1",
+                Description = "Une première offre",
+                Salaire = 1500,
+                Date = new DateTime(),
+                Responsible = "Moi",
+                Statut = manager.GetAllStatut()[0],
+                Postulations = new List<Postulation>()
+            });
+
             /*Context context = new Context();
 
             context.Statut.Add(new Statut { Label = "test" });
             context.SaveChanges();*/
 
             /*try
-            {*/
+            {
                 BusinessManager manager = BusinessManager.Instance;
                 manager.AddEmployee(new Employee()
                 {
@@ -31,7 +46,7 @@ namespace ConsoleProject
                     System.Console.WriteLine("Employee ID {0} : {1}", c.Id, c.Nom);
                 }
 
-            /*} catch (Exception e) {
+            } catch (Exception e) {
                 e.ToString();
             }*/
         }

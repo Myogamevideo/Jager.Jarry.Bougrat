@@ -12,11 +12,5 @@ namespace WebApplication.Models
         public string Label { get; set; }
 
         public StatutViewModel() {}
-
-        public StatutViewModel(int id, string label)
-        {
-            Id = id;
-            Label = label;
-        }
     }
 }
