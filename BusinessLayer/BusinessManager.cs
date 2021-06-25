@@ -34,6 +34,12 @@ namespace BusinessLayer
             return oq.GetAll().ToList();
         }
 
+        public Offre getOffreByID(int id)
+        {
+            OffreQuery oq = new OffreQuery(context);
+            return oq.GetByID(id).FirstOrDefault();
+        }
+
         public List<Offre> GetAllOffresByStatut(Statut statut)
         {
             OffreQuery oq = new OffreQuery(context);

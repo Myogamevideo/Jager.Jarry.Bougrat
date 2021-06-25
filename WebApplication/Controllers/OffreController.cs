@@ -2,8 +2,6 @@
 using ClassLibrary.Entity;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using WebApplication.Models;
 using WebApplication.Services.EntityMapper;
@@ -18,6 +16,7 @@ namespace WebApplication.Controllers
         public ActionResult Index()
         {
             List<Offre> offres = BusinessManager.Instance.GetAllOffre();
+
 
             List<OffreViewModel> offreViewModels = new List<OffreViewModel>();
 
@@ -34,7 +33,11 @@ namespace WebApplication.Controllers
         // GET: Offre/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Offre offre = BusinessManager.Instance.getOffreByID(id);
+            OffreViewModel offreViewModel = new OffreViewModel();
+            offreMapper.Map(offre, offreViewModel);
+
+            return View(offreViewModel);
         }
 
         // GET: Offre/Create

@@ -14,7 +14,7 @@ namespace ClassLibrary.Configuration
         public PostulationFluent()
         {
             ToTable("APP_POSTULATION");
-            HasKey(p => new { p.FkOffre , p.FkEmployee });            
+            HasKey(p => new { p.FkOffre , p.FkEmployee });
             
             Property(p => p.Statut).HasColumnName("POS_STATUT").IsRequired();
             Property(p => p.Date).HasColumnName("POS_DATE").HasColumnType("datetime2"); ;

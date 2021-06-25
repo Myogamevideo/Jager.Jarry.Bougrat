@@ -14,7 +14,9 @@ namespace ConsoleProject
             BusinessManager manager = BusinessManager.Instance;
             //manager.AddStatut(new Statut(){Label = "Ouverte"});
 
-            manager.AddOffre(new Offre()
+            //manager.GetAllStatut()[0],
+
+            /*manager.AddOffre(new Offre()
             {
                 Intitule = "Offre 1",
                 Description = "Une première offre",
@@ -23,7 +25,7 @@ namespace ConsoleProject
                 Responsible = "Moi",
                 Statut = manager.GetAllStatut()[0],
                 Postulations = new List<Postulation>()
-            });
+            });*/
 
             /*Context context = new Context();
 

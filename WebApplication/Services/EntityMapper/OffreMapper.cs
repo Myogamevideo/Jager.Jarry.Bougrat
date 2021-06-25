@@ -17,11 +17,11 @@ namespace WebApplication.Services.EntityMapper
             viewModel.Salaire = entity.Salaire;
             viewModel.Date = entity.Date;
             viewModel.Description = entity.Description;
-            StatutViewModel statutViewModel = new StatutViewModel() {
+            /*StatutViewModel statutViewModel = new StatutViewModel() {
                 Id = entity.Statut.Id,
                 Label = entity.Statut.Label
             };
-            viewModel.Statut = statutViewModel;
+            viewModel.Statut = statutViewModel;*/
         }
     }
 }
